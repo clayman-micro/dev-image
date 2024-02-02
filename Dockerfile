@@ -34,7 +34,7 @@ RUN echo "**** install libraries ****" && \
     python3 -m pip install poetry tox && \
   echo "**** configure poetry ****" && \
     poetry config virtualenvs.create true && \
-    poetry config virtualenvs.in-project true
+    poetry config virtualenvs.in-project true && \
   echo "**** install pyenv ****" && \
     git clone https://github.com/pyenv/pyenv.git $PYENV_ROOT && \
   echo "**** cleanup ****" && \
